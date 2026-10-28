@@ -55,25 +55,29 @@ The model runs locally through Ollama. The Python ollama package provides the co
 
 ##### 1.Clone the repository
 
-```git clone <repository-url>
+```
+git clone <repository-url>
 cd my-agent
 ```
 Replace <repository-url> with the URL of this GitHub repository.
 
 ##### 2.Create a virtual environment
 
-```python -m venv .venv
+```
+python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 ##### 3.Install the Python dependencies
 
-```pip install -r requirements.txt
+```
+pip install -r requirements.txt
 ```
 ##### 4.Download the model
 
 Install and open Ollama, then run:
 
-```ollama pull qwen3:8b
+```
+ollama pull qwen3:8b
 ```
 Make sure Ollama is running before starting the agent.
 
@@ -83,13 +87,15 @@ The Markdown writer uses the OBSIDIAN_VAULT_PATH environment variable to identif
 
 For example, in Windows PowerShell:
 
-```$env:OBSIDIAN_VAULT_PATH = "C:\Users\YourName\Documents\MyVault"
+```
+$env:OBSIDIAN_VAULT_PATH = "C:\Users\YourName\Documents\MyVault"
 ```
 Replace the example with the path to your own vault. The path should point to the vault root, not the AI Generated subfolder.
 
 ##### 6.Run the agent
 
-```python agent.py
+```
+python agent.py
 ```
 You should then be able to interact with the agent through the terminal.
 
